@@ -1,0 +1,360 @@
+@media (max-width: 1200px)
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 13px
+	.subheader
+		&_phone
+			display: inline-block
+			position: absolute
+			right: 15px
+	.main
+		&_header
+			font-size: 50px
+			line-height: 50px
+		&_subheader
+			font-size: 30px
+			line-height: 30px
+	.reasons
+		&_block
+			align-items: flex-start
+		&_descr 
+			width: 300px
+	.mobile
+		&_item
+			width: 300px
+			&_header
+				font-size: 22px
+	.choice
+		padding: 60px 0
+		min-height: 840px
+	.footer
+		&_wrapper > div
+			width: 50%
+			&:first-child
+				width: 25%
+			&:last-child
+				width: 25%
+
+@media (max-width: 991px)
+	header, nav
+		height: 40px
+	.title
+		font-size: 30px
+		line-height: 30px
+		margin-top: 30px
+	.menu
+		padding: 13px 40px
+		&_item
+			padding-right: 17px
+			line-height: 10px
+		&_link
+			font-size: 10px
+	.subheader
+		top: 40px
+		&_logo
+			img
+				width: 100%
+		&_text
+			font-size: 12px
+		&_phone
+			margin-top: 6px
+			font-size: 20px
+			line-height: 20px
+		&_btn
+			margin-top: 21px
+			width: 100%
+			height: 40px
+			font-size: 13px
+	.main
+		min-height: 750px
+		padding-bottom: 125px
+		&_header
+			font-size: 49px
+			line-height: 49px
+		&_subheader
+			font-size: 30px
+			line-height: 30px
+		&_text
+			font-size: 16px
+			line-height: 22px
+		&_btn
+			margin-top: 112px
+			width: 240px
+			height: 60px
+	.reasons
+		padding-top: 65px
+		&_block
+			flex-direction: column
+			align-items: center
+		&_round
+			margin-right: 0
+		&_descr
+			margin-top: 20px
+			width: 90%
+	.mobile
+		&_item
+			width: 95%
+	.choice
+		min-height: 780px
+		img
+			width: 100%
+	.require
+		padding-top: 65px
+	.world
+		min-height: 650px
+	.footer
+		&_divider
+			margin-bottom: 30px
+		&_wrapper
+			flex-wrap: wrap
+		&_wrapper > div
+			width: 100%
+			display: flex
+			justify-content: center
+			&:first-child
+				margin-top: 15px
+				order: 1
+				width: 50%
+			&:last-child
+				margin-top: 17px
+				order: 2
+				width: 50%
+	.xs-visible
+		display: none
+
+@media (max-width: 767px)
+	.menu
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		position: fixed
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		background-color: #212121
+		padding: 25px
+		transition: 0.6s all
+		&_active
+			left: 0
+		&_item
+			border: none
+			padding-right: 5px 0
+			width: 100%
+			text-align: center
+		&_link
+			display: block
+			font-size: 18px
+			line-height: 18px
+	.hamburger
+		display: block
+		position: absolute
+		right: 15px
+		top: 50%
+		transform: translateY(-50%)
+		width: 25px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #ffffff
+			margin-bottom: 3px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(5px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(5px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+	.subheader
+		height: 70px
+		&_logo
+			margin-top: 13px
+		&_text
+			margin-top: 2px
+		&_phone
+			display: block
+			right: 0
+			font-size: 16px
+			position: relative
+			text-align: center
+		&_btn
+			position: relative
+			display: block
+			margin: 0 auto
+			margin-top: 5px
+			width: 100%
+			height: 30px
+	.main
+		padding-top: 136px
+		padding-bottom: 110px
+		&_header
+			font-size: 45px
+			line-height: 50px
+		&_subheader
+			font-size: 25px
+			line-height: 30px
+	.title
+		font-size: 28px
+	.reasons
+		padding: 50px 0
+		&_block
+			margin-top: 30px
+		&_descr
+			width: 400px
+	.mobile
+		padding: 50px 0
+		&_item
+			width: 350px
+	.choice
+		padding: 50px 0
+		min-height: 660px
+	.require
+		padding: 50px 0 22px 0
+		&_block
+			margin: 28px 0
+	.world
+		min-height: 450px
+
+@media (max-width: 575px)
+	header, nav
+		height: 30px
+	.menu
+		height: 100%
+		width: 80%
+		&_link
+			font-size: 14px
+	.hamburger
+		width: 20px
+		span
+			height: 1px
+		&_active
+			span
+				margin-bottom: -1px
+				&:nth-child(1)
+					transform: rotate(-45deg)
+				&:nth-child(3)
+					transform: rotate(45deg)
+	.xxs-hidden
+		display: none
+	.subheader
+		top: 30px
+		height: 60px
+		&_logo
+			margin-top: 15px
+		&_phone
+			margin-top: 10px
+			font-size: 12px
+			line-height: 12px
+		&_btn
+			margin-top: 4px
+			width: 110px
+			height: 22px
+			font-size: 10px
+	.main
+		min-height: 400px
+		padding-top: 113px
+		padding-bottom: 35px
+		&_header
+			font-size: 30px
+			line-height: 35px
+		&_subheader
+			font-size: 20px
+			line-height: 25px
+		&_btn
+			margin-top: 72px
+			width: 210px
+			height: 50px
+			font-size: 16px
+	.title
+		margin-top: 15px
+		font-size: 16px
+		line-height: 16px
+	.subtitle
+		margin: 11px 0 27px 0
+		font-size: 14px
+	.reasons
+		padding: 22px 0 50px 0
+		&_block
+			margin-top: 20px
+		&_descr
+			width: 290px				
+	.mobile
+		padding: 22px 0 14px 0
+		&_item
+			margin-bottom: 30px
+			width: 290px
+			&_header
+				font-size: 20px		
+	.choice
+		padding: 25px 0 33px 0
+		min-height: 390px
+		&_descr
+			margin-top: 23px
+			position: relative
+			color: #ffffff
+			font-size: 17px
+			line-height: 24px
+			font-weight: 300
+			z-index: 2				
+		.black
+			height: 100%
+	.require
+		padding: 25px 0 10px 0
+		&_block
+			margin: 15px
+		&_header
+			font-size: 16px
+			line-height: 16px
+		&_list
+			margin-top: 15px
+			padding-left: 32px
+			font-size: 14px
+			line-height: 20px
+		&_subheader
+			margin-top: 15px
+			font-size: 14px
+			line-height: 20px
+	.world
+		min-height: 360px
+		padding: 25px 0 0 0
+		&_link
+			bottom: 30px
+			a
+				font-size: 12px
+				line-height: 12px
+	.footer
+		padding: 25px 0 20px 0
+		&_divider
+			margin-bottom: 22px
+			width: 253px
+		&_wrapper > div
+			&:first-child, &:last-child
+				margin-top: 20px
+				width: 100%
+		&_links
+			width: 100%
+			&_main
+				padding: 0
+				a
+					font-size: 14px
+			&_sub
+				padding: 0 20px
+				flex-wrap: wrap
+				a
+					font-size: 11px
+					margin-bottom: 13px	
+			&_lang
+				margin-top: 0
+				line-height: 11px
+			&_social
+				width: 100%
